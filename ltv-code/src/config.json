@@ -1,0 +1,52 @@
+{
+  "name": "STPModel",
+  "n_gpu": 1,
+  "arch": {
+    "type": "STPModel",
+    "args": {}
+  },
+  "data_name": "d2",
+  "limit_num": -1,
+  "train_ratio": 0.2,
+  "active_days": [0, 30],
+  "rnn_type": "GRU",
+  "time_slice": 90,
+  "metrics": [
+    "MSE",
+    "MAE",
+  ],
+  "metrics_weights": [
+    0.0,
+    1.0,
+  ],
+  "batch_size": 512,
+  "learning_rate": 1e-4,
+  "grad_clip": 1.0,
+  "lr_scheduler": {
+    "type": "ReduceLROnPlateau",
+    "args": {
+      "patience": 5,
+      "factor": 0.5
+    }
+  },
+  "use_tm": true,
+  "use_gm": true,
+  "te_dim": 100,
+  "se_dim": 30,
+  "use_dual_loss": true,
+  "cluster_k": 300,
+  "wavelet_loss_weight": 0.03,
+  "l1_weight": 1e-2,
+  "l2_weight": 1e-2,
+  "dual_loss_weight": 1e-2,
+  "update_interval": 1,
+  "trainer": {
+    "epochs": 100,
+    "save_dir": "../saved/",
+    "save_period": 1,
+    "verbosity": 2,
+    "monitor": "min",
+    "early_stop": 5,
+    "tensorboard": true
+  }
+}
