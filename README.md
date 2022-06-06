@@ -30,9 +30,10 @@ Please use your own dataset and customized dataset reader.
 ### Citation
 If you find our paper or code is useful for your research work, please cite the following BibTex:
 
-> @article{Xing2021LearningRU,  
+> @inproceedings{xing2021learning,  
   title={Learning Reliable User Representations from Volatile and Sparse Data to Accurately Predict Customer Lifetime Value},  
-  author={Mingzhe Xing and Shuqing Bian and Wayne Xin Zhao and Zhen Xiao and Xinji Luo and Cunxiang Yin and Jing Cai and Yancheng He},  
-  journal={Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery \& Data Mining},  
+  author={Xing, Mingzhe and Bian, Shuqing and Zhao, Wayne Xin and Xiao, Zhen and Luo, Xinji and Yin, Cunxiang and Cai, Jing and He, Yancheng},   
+  booktitle={Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery \& Data Mining},  
+  pages={3806--3816},  
   year={2021}  
-}  
+}
