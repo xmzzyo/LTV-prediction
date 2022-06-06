@@ -28,7 +28,7 @@ Please use your own dataset and customized dataset reader.
 
 
 ### Citation
-If you find our paper or code is useful for you, please cite the following BibTex:
+If you find our paper or code is useful for your research work, please cite the following BibTex:
 
 > @article{Xing2021LearningRU,  
   title={Learning Reliable User Representations from Volatile and Sparse Data to Accurately Predict Customer Lifetime Value},  
